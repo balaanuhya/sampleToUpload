@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  body{
+    background-image:url("https://cdn.hipwallpaper.com/i/85/7/pgWtOx.jpg");
+     }
+ 
+.dropbtn {
+  background-color: #3498DB;
+  color: blue;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color:#e0ffff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #2f4f4f;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color:#f0fff0;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+<center>
+
+<div class="dropdown" >
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content center">
+    <a href="#home"><span class="glyphicon glyphicon-home">Home</span></a></li>
+    <a href="#about"><span class="glyphicon glyphicon-search">search</span></a></li>
+    <a href="#contact"><span class="glyphicon glyphicon-envelope">contact</span></a></li>
+    <a class="divider">....</a>
+    
+    <a href="#about"><span class="glyphicon glyphicon-user">account</span></a></li>
+    <a href="#contact"><span class="glyphicon glyphicon-off">logout</span></a></li>
+  </div>
+</div>
+</center>
+<script>
+
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
