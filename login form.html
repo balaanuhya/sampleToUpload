@@ -1,0 +1,63 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+
+  body{
+     background-image:url("https://photoshopstar.com/media/2015/11285/LF_3.jpg");
+     background-repeat:no-repeat;
+     background-size:cover;
+      }
+  h2{
+      color:#483d8b;
+    }
+  
+  #two{
+  background-color:#2e8b57;
+  color: white;
+  padding: 12px 12px;
+  margin: 3px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+}
+ form{
+    color:  solid #00ced1;
+
+     }
+ 
+</style>
+ 
+ 
+</head>
+<body>
+<center>
+  <h2 >Login Form</h2></br>
+<form action="/action_page.php" method="post">
+  <div class="container">
+    <label for="name"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="name" required></br>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required></br>
+        
+    <button id="two" type="submit">Login</button></br>
+    <label>
+      <input type="checkbox" checked="unchecked" name="remember">Remember me
+    </label>
+  </div>
+  <div class="container" ></br>
+    <a href="#" style="color:red">forgot password?</a>
+
+   <span class="psw">create account <a href="#" style="color:red">sign up</a></span>
+  </div>
+</form>
+</center>
+</body>
