@@ -9,7 +9,7 @@
  #text{
   position: absolute;
   right: 10px;
-  top: 200px;
+  top: 210px;
 }
  label{
    word-spacing:30px;
@@ -21,6 +21,12 @@
    top:90px;
 
     }
+  a{
+    text-decoration:none;
+    }
+  a:hover{
+     color:deepskyblue;
+     }
  
   
 </style>
@@ -39,9 +45,10 @@
  <label>
   <a id="home" href="https://balaanuhya.github.io/sampleToUpload/home.html" onclick="home()">HOME</a>
   <a id="about" href="https://balaanuhya.github.io/sampleToUpload/about.html" onclick="about()">ABOUT</a>
-  <a href="">JOBS</a>
+  <a id="job" href="https://balaanuhya.github.io/sampleToUpload/jobs.html">JOBS</a>
   <a href="">PEOPLE</a>
   </label>
+  <hr>
    
  <script>
 function home() {
@@ -49,6 +56,9 @@ function home() {
     }
  function about(){
    document.getElementById("about").innerHTML = "";
+    }
+  function about(){
+   document.getElementById("job").innerHTML = "";
     }
 </script>
   
